@@ -1,0 +1,46 @@
+/* UserDetails.css */
+.user-details-container {
+    background-color: #f8f9fa; /* Light background for contrast */
+    padding: 30px;
+    margin-top: 25px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.card {
+    border: none; /* Remove default card border */
+    border-radius: 8px; /* Match card corners with the container */
+}
+
+.card-body {
+    padding: 20px; /* Increase padding for a more spacious look */
+}
+
+h5, h6 {
+    font-weight: 600; /* Bolder headings for emphasis */
+}
+
+.text-primary {
+    color: #007bff; /* Primary color for important text */
+}
+
+.list-group-item {
+    border: none; /* Remove border from list items */
+    padding: 10px 15px; /* Padding for comfortable spacing */
+    border-radius: 8px; /* Rounded list item corners */
+}
+
+.list-group-item:nth-child(even) {
+    background-color: #f1f1f1; /* Alternate background color for list items */
+}
+
+.alert {
+    border-radius: 8px; /* Rounded corners for alerts */
+    margin-bottom: 20px; /* Space below alerts */
+}
+
+.no-orders {
+    text-align: center; /* Center text for empty orders */
+    color: #6c757d; /* Muted text color */
+    font-size: 1.2rem; /* Larger font for emphasis */
+}

@@ -1,0 +1,68 @@
+/* AdminHome.css */
+
+.admin-home {
+    min-height: 100vh;
+    background-color: #f8f9fa;
+}
+
+.sidebar {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+    padding: 20px;
+}
+
+.admin-logo {
+    width: 60px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+h2 {
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+}
+
+.btn {
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #007bff;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+}
+
+.btn-primary:hover,
+.btn-danger:hover {
+    background-color: darken(#007bff, 10%);
+    color: white;
+}
+
+.main-content {
+    padding: 20px;
+}
+
+input[type="text"] {
+    border-radius: 20px;
+}
+
+input[type="text"]::placeholder {
+    color: #999;
+}
+
+/* Additional media queries for responsiveness */
+@media (max-width: 768px) {
+    .sidebar {
+        padding: 10px;
+    }
+
+    .admin-logo {
+        width: 50px;
+    }
+}

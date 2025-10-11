@@ -1,0 +1,13 @@
+.fullcard{
+    text-decoration: none;
+}
+svg{
+    width: 50px;
+}
+#buy{
+    display: flex;
+}
+#from{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}

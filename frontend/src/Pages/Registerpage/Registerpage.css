@@ -1,0 +1,89 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.sign-in {
+    display: flex;
+    justify-content: center;
+}
+
+.register {
+    border: 2px solid black;
+    width: 50%;
+    padding: 0px 20px 20px 20px;
+    box-sizing: border-box;
+    margin-top: 60px;
+}
+
+hr {
+    border: 1px solid rgb(121, 119, 119);
+}
+
+.header1 {
+    /* display: flex; */
+    padding: 20px;
+    padding-bottom: 25px;
+}
+
+#h1 {
+    padding-bottom: 5px;
+}
+
+.content {
+    display: grid;
+    margin: 10px;
+    row-gap: 2px;
+
+}
+
+.reg_input {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    border-style: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background: #dddde6;
+}
+
+input[type=text],
+input[type=password],
+input[type=email] {
+    font-size: 15px;
+}
+
+
+
+.review_label {
+    font-size: 16px;
+    font-weight: lighter;
+    color: rgb(130, 131, 132);
+    margin-left: 20px;
+    margin-top: 10px;
+    padding-top: 1px;
+}
+
+.review_name {
+    margin-top: 30px;
+}
+
+.div_btn {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.btn1 {
+    padding: 10px 40px 10px 40px;
+    background: #409ce3;
+    margin-left: 5px;
+    justify-content: center;
+    border-radius: 5px;
+    border-style: none;
+}
+
+button:hover {
+    opacity: 0.8;
+}

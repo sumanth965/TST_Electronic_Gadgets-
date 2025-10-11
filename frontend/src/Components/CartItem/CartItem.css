@@ -1,0 +1,25 @@
+.cart-page {
+    background-color: #f8f9fa;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.cart-item-image img {
+    max-height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.cart-summary {
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.empty-cart-message {
+    font-size: 1.5rem;
+    color: #6c757d;
+}
+
+.stars {
+    color: gold;
+}

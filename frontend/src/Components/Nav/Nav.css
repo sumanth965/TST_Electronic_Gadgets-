@@ -1,0 +1,86 @@
+/* Navbar layout */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+}
+
+/* Logo */
+.logo img {
+  height: 45px;
+  cursor: pointer;
+}
+
+/* Search bar */
+.search-form {
+  display: flex;
+  align-items: center;
+}
+.search-form input {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+}
+.search-form button {
+  background: #007bff;
+  border: none;
+  padding: 7px 12px;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+.search-form button:hover {
+  background: #0056b3;
+}
+
+/* Links (desktop) */
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+.nav-link {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+.nav-link:hover {
+  color: #007bff;
+}
+
+/* Hide mobile menu by default */
+.menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Mobile nav */
+.mobile-nav {
+  display: none;
+  flex-direction: column;
+  gap: 15px;
+  background: #f9f9f9;
+  padding: 15px;
+  margin-top: 10px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+.mobile-nav.show {
+  display: flex;
+}
+
+/* Responsive Rules */
+@media (max-width: 768px) {
+  .desktop-only {
+    display: none;
+  }
+  .menu-btn {
+    display: block;
+  }
+  .search-form {
+    flex: 1;
+    margin: 0 10px;
+  }
+}

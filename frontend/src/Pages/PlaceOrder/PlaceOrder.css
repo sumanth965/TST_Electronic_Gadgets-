@@ -1,0 +1,143 @@
+/* General container styling */
+.place-order-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem;
+    background-color: #ffc107;
+}
+
+/* Card shadow and styling */
+.place-order-container .card {
+    border: 1px solid red;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.place-order-container .card:hover {
+    transform: translateY(-4px);
+}
+
+/* Header text styling */
+.place-order-container h3 {
+    font-weight: 700;
+    color: #007bff;
+}
+
+/* Form field styling */
+.place-order-container .form-control {
+    border: 2px solid #e9ecef;
+    border-radius: 0.5rem;
+    transition: border-color 0.3s ease;
+}
+
+.place-order-container .form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Form validation feedback */
+.place-order-container .form-control.is-invalid {
+    border-color: #dc3545;
+}
+
+.place-order-container .form-control.is-invalid:focus {
+    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+}
+
+/* Button styling */
+.place-order-container .btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.place-order-container .btn-primary:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.place-order-container .btn-primary:disabled {
+    background-color: #007bff;
+    opacity: 0.7;
+}
+
+/* Animation for spinner */
+.spinner-border {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Summary details styling */
+.place-order-container .order-summary .d-flex {
+    font-size: 1rem;
+    color: #495057;
+}
+
+.place-order-container .order-summary .d-flex span:nth-child(2) {
+    font-weight: 600;
+}
+
+/* Total styling */
+.place-order-container .order-summary .font-weight-bold {
+    font-size: 1.25rem;
+    color: #007bff;
+}
+
+/* Modal styling */
+.modal-content {
+    border-radius: 1rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.modal-header {
+    border-bottom: none;
+}
+
+.modal-title {
+    font-weight: 600;
+    color: #007bff;
+}
+
+.modal-footer .btn-secondary {
+    background-color: #6c757d;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.modal-footer .btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+    .place-order-container .btn-primary {
+        font-size: 1rem;
+        padding: 0.6rem 1.2rem;
+    }
+}

@@ -1,0 +1,253 @@
+/* Navigation */
+.navbar-collapse .navbar-nav .nav-item a:hover {
+    color: #ff523b;
+}
+
+.cart-item {
+    margin-bottom: 1rem;
+    width: 70%;
+}
+
+/*Banner*/
+.banner-image {
+    background: url('img/banner.jpg') no-repeat center center / cover;
+    min-height: 600px;
+}
+
+/* Feature Products Card */
+.card-title a {
+    color: #333; 
+    text-decoration: none; 
+}
+.carousel-item{
+    height:500px;
+    width: 100%;
+}
+#logo{
+    width: 90px;
+}
+#menu{
+    margin-left: 70px;
+    position: absolute;
+    left: 95%;
+}
+#cart
+{
+    position: absolute;
+    left: 92%;
+}
+/* 
+#search{
+    position: absolute;
+    left: 30%;
+    display: flex;
+}
+#search-bar{
+    width: 500px;
+    border-radius:20px;
+    height: 35px;
+}
+#search-btn{
+display: absolute;
+margin-left: -45px;
+z-index: 100;
+border-radius:0px 100px;
+width: 80px;
+background-color: #333;
+} */
+#dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 80%;
+    width: 30%;
+    background: #fff;
+    border: 1px solid #ddd;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 1000;
+}
+#dropdown-menu li {
+    border-bottom: 1px solid #ddd;
+}
+#dropdown-menu li:last-child {
+    border-bottom: none;
+}
+#dropdown-menu li a {
+    display: block;
+    padding: 10px;
+    color: #000;
+    text-decoration: none;
+}
+#dropdown-menu li a:hover {
+    background: #f0f0f0;
+}
+
+
+.nav-item{
+    
+    margin: 5px 0;
+    line-height: 30px;
+  }
+  .nav-link{
+    font-size: 20px;
+  }
+  .cartpage{
+    display: flex;
+  }
+  .cartitem{
+    display: block;
+  }
+  #cart-summary{
+    width: 25%;
+    margin-right: 5%;
+  }
+  #dropdown-menu{
+    border-color: white;
+    text-align: center;
+    text-decoration: none;
+    
+  }
+  #category-div{
+    border-radius: 5%;
+    background-color: #2e3192;
+    color: #ddd;
+  }
+  #category .card-title{
+    text-align: center;
+  }
+  #category img{
+    padding: 4%;
+    border-radius: 20px;
+  }
+  #category-list{
+    width: 20%;
+    margin-left:-3% ;
+   text-decoration:none;
+  }
+  .list-group-item{
+    padding:20px 5px 20px 5px;
+    border: 0.5px solid rgb(208, 208, 208);
+    text-align: center;
+    background-color: #ffc107;
+  }
+  #link-category{
+    text-decoration:none ;
+    color: #000;
+  }
+  #product-image{
+    display: flex;
+    width: 35%;
+    height: auto;
+   margin: 0px 40px 40px 40px;
+    
+  }
+  #product-info{
+    display: flex;
+    margin-top: 50px;
+  }
+  strike{
+    color: #a1a1a1;
+    font-size:20px;
+  }
+  #discount{
+    color: rgb(0, 157, 0);
+  }
+  #cart-btn-info{
+    margin: 10px;
+  }
+  #rating{
+    
+    width: fit-content;
+    display: flex;
+    height: fit-content;
+   
+  }
+  #rating-text{
+    
+    font-size: 20px;
+  }
+  #rating-star{
+    margin-right: 10px;
+    margin-top: 5px;
+  }
+  #buy-now-info{
+    background-color: #2e3192;
+    color: white;
+  }
+  footer{
+    background:#2e3192;
+    color: #ffffff;
+    margin-top: 100px;
+    padding: 70px 0;
+    
+}
+
+footer a{
+    text-decoration: none;
+    color: #ffffff;
+
+}
+
+footer h3{
+    color: #DA722C;
+}
+
+footer ul{
+    list-style: none;
+    padding-left: 20px;
+}
+
+footer ul li{
+    margin: 16px 0;
+
+}
+
+footer .links-container{
+    display:grid;
+    grid-template-columns: 2fr 2fr 3fr;
+    margin: 0px 50px 0px 50px;
+}
+
+
+footer form{
+    margin-left: 20px;
+    margin-top: 16px;
+    position: relative;
+}
+
+footer form input{
+    font-family: "poppins",sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 200%;
+    color: #000000;
+    border-radius: 8px;
+    padding: 8px 32px;
+    border: none;
+    width: 100%;
+}
+
+footer form .submit-btn{
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #023047;
+    border-radius: 8px;
+    padding:6px 30px;
+    border:0;
+    font-family: "poppins",sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 200%;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+footer .copyright{
+    margin-top: 36px;
+    margin-left: 50px;
+}
+/* Media queries for responsive adjustments */
