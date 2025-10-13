@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App'; // Ensure the path is correct
-import { CartProvider } from './Context/CartContext'; // Adjust the import based on your structure
+import App from './App';
 import { BrowserRouter } from 'react-router-dom';
-import './index.css'; // Include your CSS
+import { CartProvider } from './Context/CartContext';
+import './index.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
