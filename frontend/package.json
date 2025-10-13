@@ -42,5 +42,8 @@
     "tailwindcss": "^4.1.11",
     "vite": "^7.1.9"
   },
+  "engines": {
+    "node": ">=18"
+  },
   "proxy": "http://localhost:3000"
 }
