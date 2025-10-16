@@ -13,7 +13,7 @@ const ListItems = () => {
         setLoading(true);
         setError(null);
         try {
-            const response = await axios.get('http://localhost:3000/api/v1/items');
+            const response = await axios.get('https://tst-electronic-gadgets-su-manth09-backend.onrender.com/api/v1/items');
             setItems(response.data);
         } catch (error) {
             console.error("Error fetching items:", error);
@@ -26,7 +26,7 @@ const ListItems = () => {
     const handleDeleteItem = async (id) => {
         if (window.confirm('Are you sure you want to delete this item?')) {
             try {
-                await axios.delete(`http://localhost:3000/api/v1/add/${id}`);
+                await axios.delete(`https://tst-electronic-gadgets-su-manth09-backend.onrender.com/api/v1/add/${id}`);
                 alert('Item deleted successfully!');
                 setItems(items.filter(item => item._id !== id));
             } catch (error) {
