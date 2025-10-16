@@ -18,7 +18,7 @@ const Auth = () => {
     const handleLogin = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post("http://localhost:3000/api/v1/user/login", {
+            const response = await axios.post("https://tst-electronic-gadgets-su-manth09-backend.onrender.com/api/v1/user/login", {
                 email: email,
                 password: password
             });
@@ -39,7 +39,7 @@ const Auth = () => {
         }
 
         try {
-            const response = await axios.post("http://localhost:3000/api/v1/user/register", {
+            const response = await axios.post("https://tst-electronic-gadgets-su-manth09-backend.onrender.com/api/v1/user/register", {
                 email: email,
                 password: password,
                 name: name
@@ -47,7 +47,7 @@ const Auth = () => {
             alert("Registration successful");
 
             // Automatically login after registration
-            const loginResponse = await axios.post("http://localhost:3000/api/v1/user/login", {
+            const loginResponse = await axios.post("https://tst-electronic-gadgets-su-manth09-backend.onrender.com/api/v1/user/login", {
                 email: email,
                 password: password
             });
