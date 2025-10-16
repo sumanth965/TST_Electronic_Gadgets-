@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Alert, Card, ListGroup, Form, InputGroup, Button } from 'react-bootstrap';
-import './UserDetails.css';
+import './Userdetails.css';
 
 export default function UserDetails() {
     const [orders, setOrders] = useState([]);
