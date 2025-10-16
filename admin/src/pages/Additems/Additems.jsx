@@ -58,10 +58,10 @@ const AddItem = () => {
 
         try {
             const response = isEditing
-                ? await axios.put(`http://localhost:3000/api/v1/add/${editingItemId}`, data, {
+                ? await axios.put(`https://tst-electronic-gadgets-su-manth09-backend.onrender.com/api/v1/add/${editingItemId}`, data, {
                     headers: { 'Content-Type': 'multipart/form-data' },
                 })
-                : await axios.post('http://localhost:3000/api/v1/add', data, {
+                : await axios.post('https://tst-electronic-gadgets-su-manth09-backend.onrender.com/api/v1/add', data, {
                     headers: { 'Content-Type': 'multipart/form-data' },
                 });
 
