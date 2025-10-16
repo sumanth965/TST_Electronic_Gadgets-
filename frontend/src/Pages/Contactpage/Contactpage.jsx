@@ -21,7 +21,7 @@ export default function Contactpage() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:3000/api/v1/contact', formData);
+      await axios.post('https://tst-electronic-gadgets-su-manth09-backend.onrender.com/api/v1/contact', formData);
       alert('Thankk UUU for contacting...!!!!!');
       setFormData({
         name: '',
