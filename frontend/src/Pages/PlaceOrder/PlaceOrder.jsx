@@ -93,7 +93,7 @@ export default function PlaceOrder() {
         };
 
         try {
-            const response = await axios.post('http://localhost:3000/api/orders', orderData);
+            const response = await axios.post('https://tst-electronic-gadgets-su-manth09-backend.onrender.com/api/orders', orderData);
 
             if (response.status === 200) {
                 setOrderSuccess(true);
