@@ -47,7 +47,7 @@ const Devices = () => {
         const fetchItems = async () => {
             try {
                 setLoading(true);
-                const response = await axios.get("http://localhost:3000/api/v1/items");
+                const response = await axios.get("https://tst-electronic-gadgets-su-manth09-backend.onrender.com/api/v1/items");
                 setItems(response.data);
 
                 // Set initial price range based on data
