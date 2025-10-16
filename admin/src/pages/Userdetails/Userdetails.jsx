@@ -15,7 +15,7 @@ export default function UserDetails() {
 
     const fetchOrders = async () => {
         try {
-            const response = await axios.get(`http://localhost:3000/api/orders/${userId}/orders`);
+            const response = await axios.get(`https://tst-electronic-gadgets-su-manth09-backend.onrender.com/api/orders/${userId}/orders`);
             setOrders(response.data.orders);
         } catch (err) {
             console.error('Error fetching orders:', err);
@@ -25,7 +25,7 @@ export default function UserDetails() {
 
     const handleDeleteOrder = async (orderId) => {
         try {
-            await axios.delete(`http://localhost:3000/api/orders/${orderId}`);
+            await axios.delete(`https://tst-electronic-gadgets-su-manth09-backend.onrender.com/api/orders/${orderId}`);
             setOrders(orders.filter(order => order._id !== orderId));
         } catch (err) {
             console.error('Error deleting order:', err);
